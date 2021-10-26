@@ -2,7 +2,7 @@ node
   {
   stage('checkout')
     {
-    checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], gitTool: 'achyuth501', userRemoteConfigs: [[credentialsId: 'achyuth', url: 'https://github.com/ammaladdine/multi-brabching-project.git']]])
+     checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], gitTool: 'achyuth501', userRemoteConfigs: [[credentialsId: 'multi-project', url: 'https://github.com/ammaladdine/multi-brabching-project.git']]]) 
     }
   stage('deploy')
     {
